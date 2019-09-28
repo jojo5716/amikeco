@@ -1,11 +1,13 @@
-import React, { Suspense } from 'react';
+import React from 'react';
+
+import Sidebar from '@components/sidebar/';
 
 
 class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>App</h1>
+                <Sidebar/>
                 {this.props.children}
             </React.Fragment>
         );

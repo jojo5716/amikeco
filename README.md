@@ -26,7 +26,7 @@ npm amikeco --save
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Amikeco from 'Amikeco';
+import Amikeco from 'amikeco';
 
 
 ReactDOM.render(

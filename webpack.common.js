@@ -84,6 +84,8 @@ module.exports = {
             '@core': path.resolve(__dirname, 'src/core/'),
             '@containers': path.resolve(__dirname, 'containers/'),
             '@api': path.resolve(__dirname, 'src/core/api/'),
+            '@components': path.resolve(__dirname, 'components/'),
+            '@root': path.resolve(__dirname, './'),
         },
     },
 };

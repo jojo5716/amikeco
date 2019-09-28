@@ -6,13 +6,13 @@
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-const api = require('../index');
+const api = require('../fetch');
 const {
-    URL_APP_SETTINGS,
+    URL_AJAX_APP_SETTINGS,
     URL_APP_TRANSLATIONS,
     URL_APP_HEADER_PROPS,
     URL_APP_FOOTER_PROPS,
-} = require('../urls');
+} = require('@src/constants/urls');
 
 
 /**
@@ -26,7 +26,7 @@ module.exports = {
      * @param {string} endpoint Optional endpoint (overrides the default)
      * @returns {object} A promise that resolves to the received data in json
      */
-    settings: async (endpoint = URL_APP_SETTINGS) => api.get(endpoint),
+    settings: async (endpoint = URL_AJAX_APP_SETTINGS) => api.get(endpoint),
     translations: async (endpoint = URL_APP_TRANSLATIONS) => api.get(endpoint),
     header: async (endpoint = URL_APP_HEADER_PROPS) => api.get(endpoint),
     footer: async (endpoint = URL_APP_FOOTER_PROPS) => api.get(endpoint)
