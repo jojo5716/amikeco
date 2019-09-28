@@ -26,8 +26,8 @@ module.exports = {
      * @param {string} endpoint Optional endpoint (overrides the default)
      * @returns {object} A promise that resolves to the received data in json
      */
-    settings: async (endpoint = URL_AJAX_APP_SETTINGS) => api.get(endpoint),
-    translations: async (endpoint = URL_APP_TRANSLATIONS) => api.get(endpoint),
-    header: async (endpoint = URL_APP_HEADER_PROPS) => api.get(endpoint),
-    footer: async (endpoint = URL_APP_FOOTER_PROPS) => api.get(endpoint)
+    settings: async (endpoint = URL_AJAX_APP_SETTINGS) => api.post(endpoint),
+    translations: async (endpoint = URL_APP_TRANSLATIONS) => api.post(endpoint),
+    header: async (endpoint = URL_APP_HEADER_PROPS) => api.post(endpoint),
+    footer: async (endpoint = URL_APP_FOOTER_PROPS) => api.post(endpoint)
 };
